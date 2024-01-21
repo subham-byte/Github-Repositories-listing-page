@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Github Repositories</h1>
+        <div class="search-container">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button onclick="searchUser()">Search</button>
+        </div>
+
+        <div id="loader" class="loader"></div>
+
+
+        <div id="user-info" class="user-info">
+            <div class="avatar-container">
+                <img id="avatar" class="avatar" src="" alt="Avatar">
+            </div>
+            <div class="user-details">
+                <div id="user-name" class="user-name"></div>
+                <div id="user-description" class="user-description"></div>
+                <div id="user-location" class="user-location"></div>
+                <div id="github-link" class="github-link"></div>
+            </div>
+        </div>
+
+        <div id="repositories"></div>
+        <div id="pagination" class="pagination-container"></div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search by repository name">
+            <button onclick="searchRepositories()">Search</button>
+        </div>
+
+
+        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
